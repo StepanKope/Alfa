@@ -1,30 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Webpage</title>
+    <title>Testovací Projekt s Obrázky</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
+            background-color: #f7f7f7;
         }
         header {
-            background-color: #4682b4;
+            background-color: #2c3e50;
             color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        main {
             padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .content {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .images img {
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background-color: #4682b4;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -34,17 +70,52 @@
 <body>
 
 <header>
-    <h1>Welcome to My Webpage</h1>
+    <h1>Testovací Projekt s Obrázky</h1>
 </header>
 
-<main>
-    <h2>Hello World!</h2>
-    <p>This is a small webpage to demonstrate basic HTML structure.</p>
-</main>
+<nav>
+    <a href="#">Úvod</a>
+    <a href="#">O nás</a>
+    <a href="#">Služby</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<section>
+    <div class="content">
+        <h2>Vítejte na testovacím projektu</h2>
+        <p>Tento projekt ukazuje, jak zahrnout obrázky na webovou stránku. Níže najdete tři sekce, každou se třemi obrázky a krátkými popisy.</p>
+
+        <!-- First set of images and paragraph -->
+        <div class="images">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+1" alt="Obrázek 1">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+2" alt="Obrázek 2">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+3" alt="Obrázek 3">
+        </div>
+        <p>První sekce s obrázky ukazuje základní ukázky obrázků, které můžete použít pro svůj projekt. Obrázky jsou stylizovány tak, aby vypadaly čistě a profesionálně.</p>
+
+        <!-- Second set of images and paragraph -->
+        <div class="images">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+4" alt="Obrázek 4">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+5" alt="Obrázek 5">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+6" alt="Obrázek 6">
+        </div>
+        <p>Druhá sekce obsahuje další obrázky, které ilustrují, jak snadno lze vložit více obrázků a textů na stránku. Tento design je flexibilní pro různé použití.</p>
+
+        <!-- Third set of images and paragraph -->
+        <div class="images">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+7" alt="Obrázek 7">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+8" alt="Obrázek 8">
+            <img src="https://via.placeholder.com/300x200?text=Obrázek+9" alt="Obrázek 9">
+        </div>
+        <p>Třetí sekce zobrazuje další obrázky a poskytuje závěrečné informace o stránce. Tento design je snadno přizpůsobitelný a může být použit pro různé účely.</p>
+
+    </div>
+</section>
 
 <footer>
-    <p>&copy; 2025 My Simple Webpage</p>
+    <p>&copy; 2025 Testovací Projekt</p>
 </footer>
 
 </body>
 </html>
+
